@@ -33,3 +33,4 @@ if __name__ == "__main__":
                                      price_per_meter=2,discountable=True,convertable=False)
 
     apartement_sale.show_more_detail()
+    print(apartement_sale.manager.search(area=89))

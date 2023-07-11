@@ -24,6 +24,10 @@ class SaleApartement(BaseClass,Advertisment, Apartement,Sale):
         self.show_description()
         self.show_detial()
 
+    def __str__(self):
+
+        return f"{self.price_per_meter}\t{self.region}\t{self.show_more_detail()}"
+
 
 class SaleStore(BaseClass, Store,Sale):
     pass
